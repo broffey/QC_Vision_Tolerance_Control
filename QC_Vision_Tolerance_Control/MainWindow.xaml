@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QC_Vision_Tolerance_Control"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1080">
     <Grid>
-        
+        <ComboBox x:Name="partList" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="50" Margin="10,10,10,10" VerticalAlignment="Top" Width="1000" IsReadOnly="True" DropDownOpened="partList_DropDownOpened" SelectionChanged="partList_SelectionChanged" FontSize="20" FontWeight="Bold" IsDropDownOpen="True" VerticalContentAlignment="Center"/>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Height="450">
+        <Grid x:Name="primaryGrid" HorizontalAlignment="Center" Margin="10,0,10,50" VerticalAlignment="Top" Width="1000">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250">
+
+                    </ColumnDefinition>
+
+                    <ColumnDefinition Width="250">
+
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="250">
+
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="250">
+
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+        </ScrollViewer>
     </Grid>
 </Window>
